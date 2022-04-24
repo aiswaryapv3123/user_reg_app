@@ -174,51 +174,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.grey,
               ),
             ),
-            // FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
-            //   future: collection.doc(uid).get(),
-            //   builder: (_, snapshot) {
-            //     if (snapshot.hasError) return Text('Error = ${snapshot.error}');
-            //
-            //     if (snapshot.hasData) {
-            //       var output = snapshot.data!.data();
-            //       var value = output!['email']; // example@gmail.com
-            //       return Text(value);
-            //     }
-            //
-            //     return Center(child: CircularProgressIndicator());
-            //   },
-            // ),
-            // StreamBuilder<QuerySnapshot>(
-            // stream: FirebaseFirestore.instance
-            //     .collection('UserData')
-            //     .orderBy('UserData', descending: true)
-            //     .snapshots(),
-            //   builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-            //     var userData = FirebaseFirestore.instance.collection("/userdata").doc("uid").get();
-            //     if (!snapshot.hasData) return new Text("There is no expense");
-            //     return new ListView(children: [
-            //       Text("Welcome User " + _firebaseAuth.currentUser!.displayName!,
-            //         style: TextStyle(
-            //           fontSize: 15,
-            //           fontWeight: FontWeight.bold,
-            //           color: Colors.amber,
-            //         ),),
-            //     ]);
-            //   }),
-            //
-            //     Text("Welcome User " + _firebaseAuth.currentUser!.email!,
-            //       style: TextStyle(
-            //         fontSize: 12,
-            //         fontWeight: FontWeight.w500,
-            //         color: Colors.grey,
-            //       ),),
-            // SizedBox(height: screenHeight(context, dividedBy: 6)),
-            // BuildButton(
-            //     label: "LogOut",
-            //     onPressed: () async {
-            //       await FirebaseAuth.instance.signOut();
-            //       push(context, LoginPage());
-            //     })
+           
           ],
         ),
       ),
